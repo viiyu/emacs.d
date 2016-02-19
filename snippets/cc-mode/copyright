@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: copyright
+# key: copy
+# --
+/*
+ * Copyright 2015-2020 Alibaba Inc. All rights reserved.
+ * Created on: `(insert (format-time-string "%Y-%m-%d"))`
+ * Author Name: 笑至
+ * Author Email: zhixiao.yw@alibaba-inc.com
+ */
+
