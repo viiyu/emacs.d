@@ -17,6 +17,10 @@
 (require 'init-smex)
 (require 'init-yasnippet)
 (require 'init-ctag)
+;; (require 'init-flycheck)
+;; (require 'init-php)
+(require 'init-ace-jump)
+;; (require 'init-jedi-company)
 
 ;; ================================================
 ;; Theme
@@ -139,3 +143,12 @@
   (eshell))
 (global-set-key (kbd "<f8>") 'open-eshell-other-buffer)
 (put 'erase-buffer 'disabled nil)
+
+;; Force gdb-mi to not dedicate any windows
+(defadvice gdb-display-buffer (after undedicate-gdb-display-buffer)
+  (set-window-dedicated-p ad-return-value nil))
+(ad-activate 'gdb-display-buffer)
+
+(defadvice gdb-set-window-buffer (after undedicate-gdb-set-window-buffer (name &optional ignore-dedi window))
+  (set-window-dedicated-p window nil))
+(ad-activate 'gdb-set-window-buffer)
