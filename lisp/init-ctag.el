@@ -3,7 +3,7 @@
   (interactive "DDirectory: ")
   (message "building project tags")
   (let (setq root dir-name)
-    (shell-command (concat "ctags -e -R --extra=+fq --exclude=db --exclude=test --exclude=.git --exclude=public -f " root "TAGS " root)))
+    (shell-command (concat "/usr/bin/ctags -e -R --extra=+fq --exclude=db --exclude=test --exclude=.git --exclude=public -f " root "TAGS " root)))
   (visit-project-tags dir-name)
   (message "tags built successfully"))
 
