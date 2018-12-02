@@ -61,7 +61,7 @@ tags: [Emacs, Lisp]
 首先，我们需要了解Emacs中快捷键的起点键和快捷键的描述方法，如我们关闭Emacs的快捷键描述为`C-x C-c`，操作为两步：CTRL+x后CTRL+c，再比如，保存buffer快捷键`C-x s`就是CTRL+x后单独按s，再比如，我们打开Emacs的命令行使用命令`M-x`，其中`M`代表meta键，在不同的系统上这个键可能会不同，一般为`ALT`，不过我一开始在Mac上使用的时候，这个键为`ESC`，不过这个可以在系统里更改，再比如CTRL不好按，就可以把它和caps键呼唤，习惯以后就可以入手价值不菲的编程大杀器`HHKB--HAPPY HACKING KEYBOARD`。配上Mac再来套彩虹色键帽，啧啧。
 
 #### 3.0 关闭Emacs
-请按`C-x c`。
+请按`C-x C-c`。
 
 #### 3.1 光标移动
 |keys     |description|
