@@ -330,7 +330,8 @@ you should place your code here."
   ;; customized bind key
   (define-key global-map (kbd "C-x g f") 'grep-find-command)
   (define-key global-map (kbd "C-x C-f") 'ido-find-file)
-  (define-key global-map (kbd "C-x C-b") 'helm-buffers-list)
+  (define-key global-map (kbd "C-x C-b") 'helm-mini)
+  (define-key global-map (kbd "C-x b") 'helm-mini)
   (define-key global-map  (kbd "M-l") 'linum-mode)
 
   (defun my-cedet-hook ()
