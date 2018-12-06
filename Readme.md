@@ -4,6 +4,11 @@ date: 2016-01-30 16:32:22
 category: Emacs
 tags: [Emacs, Lisp]
 ---
+### SPACEMACS usage
+#### 安装 
+
+
+
 ### 1 前言
 #### 1.1 why Emacs
 * 逼格高。当你编程时小伙伴问你用的什么编辑器时，你默默的说出一个古董般的名字，这感觉还是很酸爽的。
